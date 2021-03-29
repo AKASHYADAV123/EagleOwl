@@ -1,24 +1,33 @@
-import logo from './logo.svg';
+import React from "react";
 import './App.css';
+import Top from './Top';
+import Down from './Down';
 
-function App() {
+
+
+function App() {  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <div className='box1'>      
+        <div className="hmr">
+          <div className="topbox">  
+            High Margin Recipes          
+              <Top />                       
+          </div>
+
+          <div className="topbox">  
+            Low Margin Recipes          
+              <Top />                          
+          </div>
+
+          <div className="topbox">  
+            Top Fluctuating Recipes          
+              <Top />                
+          </div>
+
+        </div>  
+    <div className="lmr"></div>       
+    <Down/>  
+  </div>  
   );
 }
 
